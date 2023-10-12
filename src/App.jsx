@@ -5,7 +5,7 @@ const App = () => {
   const [data, setData] = useState("");
 
   const getData = async()=>{
-    const response = await Axios.get("http://localhost:3000/getData");
+    const response = await Axios.get("http://localhost:8000/api");
     setData(response.data);
   }
 
